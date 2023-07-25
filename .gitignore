@@ -122,6 +122,12 @@ unlinked_spec.ds
 # Coverage
 coverage/
 
+
+macos
+linux
+web
+windows
+
 # Symbols
 app.*.symbols
 
