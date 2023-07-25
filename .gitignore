@@ -42,3 +42,51 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+# Flutter/Dart specific
+**/build/
+**/ios/Pods/
+**/ios/.symlinks/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub/
+**/.pub-cache/
+
+# Android specific
+**/android/build/
+**/android/.gradle/
+**/android/local.properties
+**/android/gradlew
+**/android/gradle/
+
+# iOS specific
+**/ios/Runner.xcworkspace
+**/ios/Pods/
+**/ios/Flutter/Flutter.podspec
+**/ios/.generated/
+
+# IDE files
+**/*.iml
+**/.idea/
+**/.vscode/
+
+# Logs and other generated files
+**/flutter_session.log
+**/flutter.log
+**/macos/Flutter/Flutter.podspec
+**/windows/Flutter/ephemeral/.plugin_symlinks/
+**/windows/Flutter/ephemeral/flutter_embedding_debug.stamp
+**/windows/Flutter/ephemeral/flutter_embedding_release.stamp
+**/web/.dart_tool/
+**/web/packages/flutter_tools/
+
+# Miscellaneous
+**/*.lock
+**/*.log
+**/*.gz
+**/*.zip
+**/*.apk
+**/*.ipa
