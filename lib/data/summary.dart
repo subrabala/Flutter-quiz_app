@@ -12,9 +12,10 @@ class Summary extends StatelessWidget {
         child: Column(
             children: summaryData.map((data) {
           return Container(
-             alignment: Alignment.topCenter,
+            alignment: Alignment.topCenter,
             height: 100,
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                     width: 30,
@@ -29,25 +30,34 @@ class Summary extends StatelessWidget {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      data['question'] as String,
-                      style: const TextStyle(
-                          fontSize: 16,
-                          color: Color.fromARGB(255, 207, 110, 210)),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Text(
+                        data['question'] as String,
+                        style: const TextStyle(
+                            fontSize: 16,
+                            color: Color.fromARGB(255, 207, 110, 210)),
+                      ),
                     ),
                     const SizedBox(
                       height: 5,
                     ),
-                    Text(
-                      data['user_answer'] as String,
-                      style: const TextStyle(
-                        color: Color.fromARGB(255, 202, 171, 252),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Text(
+                        data['user_answer'] as String,
+                        style: const TextStyle(
+                          color: Color.fromARGB(255, 202, 171, 252),
+                        ),
                       ),
                     ),
-                    Text(data['correct_answer'] as String,
-                        style: const TextStyle(
-                          color: Color.fromARGB(255, 181, 254, 246),
-                        ))
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: Text(data['correct_answer'] as String,
+                          style: const TextStyle(
+                            color: Color.fromARGB(255, 181, 254, 246),
+                          )),
+                    )
                   ],
                 ))
               ],
